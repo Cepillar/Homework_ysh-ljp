@@ -7,9 +7,7 @@
 #include "visualization_msgs/MarkerArray.h"
 #include <geometry_msgs/Point.h>
 #include "nav_msgs/Path.h"
-#include <iostream>
-#include <unordered_set>
-#include <chrono>
+
 
 
 struct Node {
@@ -42,22 +40,12 @@ struct GridMap {
     GridMap(int w, int h, double map_min_, double map_max_, double res) : width(w), height(h), map_min(map_min_), map_max(map_max_), grid_resolution(res), grid(w, std::vector<int>(h, 0)) {}
 
     void markObstacle(double cx, double cy, double radius) {
-        // radius = 0.2;
-        // std::cout << width << height << map_max << map_min << grid_resolution << std::endl;
         int grid_cx = std::round((cx - map_min) / grid_resolution);
         int grid_cy = std::round((cy - map_min) / grid_resolution);
         int grid_radius = std::round(radius / grid_resolution);
-
-        for (int i = -grid_radius; i <= grid_radius; ++i) {
-            for (int j = -grid_radius; j <= grid_radius; ++j) {
-                int nx = grid_cx + i;
-                int ny = grid_cy + j;
-                if (nx >= 0 && nx < width && ny >= 0 && ny < height &&
-                    std::sqrt(i * i + j * j) <= grid_radius) {
-                    grid[nx][ny] = 1;  // 标记为占用
-                }
-            }
-        }
+        // Step 1: 将圆形区域标记为占用
+            // your code
+        // finish
     }
 };
 class AStarPlanner {
@@ -81,96 +69,39 @@ public:
         std::cout<<"num of obstacles: "<<num_of_obs_<<std::endl;
     }
 
-    // Helper function to find the nearest free grid
-    std::pair<int, int> findNearestFreeGrid(int x, int y) {
-        std::queue<std::pair<int, int>> q;
-        std::vector<std::vector<bool>> visited(width_, std::vector<bool>(height_, false));
-        q.push({x, y});
-        visited[x][y] = true;
-
-        // 八连通方向
-        std::vector<std::pair<int, int>> directions = {
-            {1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
-        };
-
-        while (!q.empty()) {
-            auto [cx, cy] = q.front();
-            q.pop();
-
-            if (grid_map_.grid[cx][cy] == 0) { // 找到空闲栅格
-                return {cx, cy};
-            }
-
-            for (const auto& dir : directions) {
-                int nx = cx + dir.first;
-                int ny = cy + dir.second;
-                if (nx >= 0 && nx < width_ && ny >= 0 && ny < height_ && !visited[nx][ny]) {
-                    visited[nx][ny] = true;
-                    q.push({nx, ny});
-                }
-            }
-        }
-
-        throw std::runtime_error("No free grid found near the point");
-    }
-
     std::vector<Eigen::Vector2d> findPath(Eigen::Vector2d start, Eigen::Vector2d goal) {
-        if (num_of_obs_ == 0) {
+        if(num_of_obs_ == 0){
             return {};
         }
-
+        // 起点和终点转换为网格坐标
         auto gridStart = worldToGrid(start);
         auto gridGoal = worldToGrid(goal);
 
-        // 检查起点或终点是否被障碍物占据
-        if (grid_map_.grid[gridStart.first][gridStart.second] == 1) {
-            std::cout << "Start point is occupied. Searching for the nearest free grid..." << std::endl;
-            gridStart = findNearestFreeGrid(gridStart.first, gridStart.second);
-            std::cout << "New start point: (" << gridStart.first << ", " << gridStart.second << ")" << std::endl;
-        }
-
-        if (grid_map_.grid[gridGoal.first][gridGoal.second] == 1) {
-            std::cout << "Goal point is occupied. Searching for the nearest free grid..." << std::endl;
-            gridGoal = findNearestFreeGrid(gridGoal.first, gridGoal.second);
-            std::cout << "New goal point: (" << gridGoal.first << ", " << gridGoal.second << ")" << std::endl;
-        }
-
         // 开放列表和关闭列表
         std::priority_queue<std::shared_ptr<Node>, std::vector<std::shared_ptr<Node>>, cmp> open_list;
-        std::unordered_set<std::string> closed_list; // 用哈希表存储关闭节点
+        std::vector<std::vector<bool>> closed_list(width_, std::vector<bool>(height_, false));
 
-        open_list.push(std::make_shared<Node>(gridStart.first, gridStart.second, 0.0, heuristic(gridStart, gridGoal)));
+        // 起点加入开放列表
+        open_list.push(std::make_shared<Node>(Node(gridStart.first, gridStart.second, 0.0, heuristic(gridStart, gridGoal))));
+        // Step 3： 实现 A* 算法，搜索结束调用 reconstructPath 返回路径
 
-        while (!open_list.empty()) {
-            auto current_node = open_list.top();
-            open_list.pop();
-
-            std::string current_key = std::to_string(current_node->x) + "_" + std::to_string(current_node->y);
-            if (closed_list.count(current_key)) {
-                continue;
-            }
-            closed_list.insert(current_key);
-
-            if (current_node->x == gridGoal.first && current_node->y == gridGoal.second) {
-                return reconstructPath(current_node);  // 找到路径
-            }
-
-            for (auto& neighbor : getNeighbors(*current_node)) {
-                std::string neighbor_key = std::to_string(neighbor.x) + "_" + std::to_string(neighbor.y);
-                if (closed_list.count(neighbor_key)) {
-                    continue;
+            // 样例路径，用于给出路径形式，实现 A* 算法时请删除
+                std::vector<Eigen::Vector2d> path;
+                int num_points = 100; // 生成路径上的点数
+                for (int i = 0; i <= num_points; ++i) {
+                    double t = static_cast<double>(i) / num_points;
+                    Eigen::Vector2d point = start + t * (goal - start);
+                    path.push_back(point);
                 }
+                return path;
+            // 注释结束
+            // your code
 
-                neighbor.h_cost = heuristic({neighbor.x, neighbor.y}, gridGoal);
-                neighbor.parent = current_node;
-                open_list.push(std::make_shared<Node>(neighbor));
-            }
-        }
+        // finish
 
-        return {};  // 未找到路径
+        // 如果没有找到路径，返回空路径
+        return {};
     }
-
-
     void reset(){
         num_of_obs_ = 0;
         grid_map_.grid = std::vector<std::vector<int>>(width_, std::vector<int>(height_, 0));
@@ -201,22 +132,21 @@ private:
         return Eigen::Vector2d(wx, wy);
     }
 
+    // 获取当前节点的所有邻居节点
     std::vector<Node> getNeighbors(const Node& current) {
         std::vector<Node> neighbors;
+
+        // 八连通邻居
         std::vector<std::pair<int, int>> directions = {
-            {1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
-        };
-
+                {1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
         for (const auto& dir : directions) {
-            int nx = current.x + dir.first;
-            int ny = current.y + dir.second;
+            // Step 2: 根据当前节点和方向计算邻居节点的坐标，并将其加入 neighbors
 
-            if (nx >= 0 && nx < width_ && ny >= 0 && ny < height_ &&
-                grid_map_.grid[nx][ny] == 0) { // 检查边界和占用状态
-                double g_cost = current.g_cost + std::sqrt(dir.first * dir.first + dir.second * dir.second);
-                neighbors.emplace_back(nx, ny, g_cost, 0.0);  // h_cost 暂时为 0
-            }
+                // your code
+
+            // finish
         }
+
         return neighbors;
     }
 
@@ -279,18 +209,12 @@ int main(int argc, char** argv) {
 //        ros::Duration(1.0).sleep();
         ros::spinOnce();
         // 执行路径搜索
-        auto start_time = std::chrono::high_resolution_clock::now();
         std::vector<Eigen::Vector2d> path = planner.findPath(start, goal);
-        auto finish_time = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> time_cost = finish_time - start_time;
-        
+
         // 路径可视化
         if (path.empty()){
             continue;
         }
-        
-        std::cout<<"find path"<<std::endl;
-        std::cout << "A* time cost: " << time_cost.count() << "s\n";
         nav_msgs::Path path_msg;
         path_msg.header.frame_id = "map";
         path_msg.header.stamp = ros::Time::now();
