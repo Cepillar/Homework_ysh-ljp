@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: astar_path_planner
+Description: Description of astar_path_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -113,7 +113,65 @@ public:
 
         throw std::runtime_error("No free grid found near the point");
     }
+    // 计算路径转向代价
+    double calculateTurningCost(const Node& current, const Node& previous) {
+        // 确保 previous 节点有父节点
+        if (previous.parent == nullptr) {
+            return 0.0;  // 起始节点没有父节点，返回零代价
+        }
 
+        // 计算当前节点和上一个节点的方向向量
+        Eigen::Vector2d current_direction(current.x - previous.x, current.y - previous.y);
+        Eigen::Vector2d previous_direction(previous.x - previous.parent->x, previous.y - previous.parent->y);
+
+        // 如果方向向量接近零，直接返回零代价（避免除零错误）
+        if (current_direction.norm() < 1e-6 || previous_direction.norm() < 1e-6) {
+            return 0.0;
+        }
+
+        // 计算两个方向向量的夹角
+        double angle = std::atan2(current_direction.y(), current_direction.x()) -
+                    std::atan2(previous_direction.y(), previous_direction.x());
+        
+        // 确保角度在 -PI 到 PI 之间
+        angle = std::fmod(angle + M_PI, 2 * M_PI);
+        if (angle < 0) {
+            angle += 2 * M_PI;
+        }
+        angle -= M_PI;
+
+        // 计算转向代价：角度差异越大，代价越高
+        double turning_cost = std::abs(angle) > 0.1 ? std::abs(angle) : 0.0; // 可调节角度阈值
+        return turning_cost;
+    }
+
+    // 修改 `getNeighbors` 函数，增加路径转向代价
+    std::vector<Node> getNeighbors(const Node& current, std::shared_ptr<Node> parent) {
+        std::vector<Node> neighbors;
+
+        std::vector<std::pair<int, int>> directions = {
+            {1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
+        };
+
+        for (const auto& dir : directions) {
+            int nx = current.x + dir.first;
+            int ny = current.y + dir.second;
+
+            if (nx >= 0 && nx < width_ && ny >= 0 && ny < height_ && grid_map_.grid[nx][ny] == 0) {
+                double g_cost = current.g_cost + std::sqrt(dir.first * dir.first + dir.second * dir.second);
+
+                // 如果有父节点，则计算路径转向代价
+                double turning_cost = 0.0;
+                if (parent) {
+                    turning_cost = calculateTurningCost(current, *parent);
+                }
+
+                neighbors.emplace_back(nx, ny, g_cost + turning_cost, 0.0); // h_cost 暂时为 0
+            }
+        }
+        return neighbors;
+    }
+    // 在 `findPath` 中调用 `getNeighbors` 时修改传递的参数
     std::vector<Eigen::Vector2d> findPath(Eigen::Vector2d start, Eigen::Vector2d goal) {
         if (num_of_obs_ == 0) {
             return {};
@@ -155,7 +213,8 @@ public:
                 return reconstructPath(current_node);  // 找到路径
             }
 
-            for (auto& neighbor : getNeighbors(*current_node)) {
+            // 获取邻居节点时传递当前节点作为父节点
+            for (auto& neighbor : getNeighbors(*current_node, current_node->parent)) {
                 std::string neighbor_key = std::to_string(neighbor.x) + "_" + std::to_string(neighbor.y);
                 if (closed_list.count(neighbor_key)) {
                     continue;
@@ -166,10 +225,8 @@ public:
                 open_list.push(std::make_shared<Node>(neighbor));
             }
         }
-
         return {};  // 未找到路径
     }
-
 
     void reset(){
         num_of_obs_ = 0;

@@ -51,6 +51,9 @@ int main(int argc, char** argv) {
 
     std::random_device rd;
     std::mt19937 gen(rd());
+    // // 使用固定种子来初始化随机数生成器，确保每次运行时生成相同的结果
+    // unsigned int seed = 142;  // 固定的种子
+    // std::mt19937 gen(seed);
     std::uniform_real_distribution<> pos_dist(map_min_, map_max_);
     std::uniform_real_distribution<> radius_dist(min_radius_, max_radius_);
     visualization_msgs::MarkerArray marker_array;
