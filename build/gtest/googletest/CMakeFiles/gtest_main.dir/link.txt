@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgtest_maind.so -o ../lib/libgtest_maind.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/home/ysh/catkin_workspace/src/TrajectoryHomework/build/gtest/lib ../lib/libgtestd.so -lpthread 
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libgtest_maind.so -o ../lib/libgtest_maind.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/home/jiangpin/projects/homework/Homework_ysh-ljp/build/gtest/lib ../lib/libgtestd.so -lpthread 

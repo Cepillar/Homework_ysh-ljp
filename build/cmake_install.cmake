@@ -1,8 +1,8 @@
-# Install script for directory: /home/ysh/catkin_workspace/src/TrajectoryHomework/astar_path_planner
+# Install script for directory: /home/jiangpin/projects/homework/Homework_ysh-ljp/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/jiangpin/projects/homework/Homework_ysh-ljp/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -49,103 +54,89 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/_setup_util.py")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE PROGRAM FILES "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/env.sh")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE PROGRAM FILES "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.bash;/usr/local/local_setup.bash")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/setup.bash;/home/jiangpin/projects/homework/Homework_ysh-ljp/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/setup.bash"
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE FILE FILES
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/setup.bash"
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.sh;/usr/local/local_setup.sh")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/setup.sh;/home/jiangpin/projects/homework/Homework_ysh-ljp/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/setup.sh"
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE FILE FILES
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/setup.sh"
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.zsh;/usr/local/local_setup.zsh")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/setup.zsh;/home/jiangpin/projects/homework/Homework_ysh-ljp/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/setup.zsh"
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE FILE FILES
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/setup.zsh"
+    "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/.rosinstall")
+   "/home/jiangpin/projects/homework/Homework_ysh-ljp/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/.rosinstall")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/astar_path_planner.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/astar_path_planner/cmake" TYPE FILE FILES
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/astar_path_plannerConfig.cmake"
-    "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/catkin_generated/installspace/astar_path_plannerConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/astar_path_planner" TYPE FILE FILES "/home/ysh/catkin_workspace/src/TrajectoryHomework/astar_path_planner/package.xml")
+file(INSTALL DESTINATION "/home/jiangpin/projects/homework/Homework_ysh-ljp/install" TYPE FILE FILES "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ysh/catkin_workspace/src/TrajectoryHomework/build/gtest/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/gtest/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/astar_path_planner/cmake_install.cmake")
 
 endif()
 
@@ -157,5 +148,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ysh/catkin_workspace/src/TrajectoryHomework/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jiangpin/projects/homework/Homework_ysh-ljp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
