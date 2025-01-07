@@ -1,6 +1,7 @@
 ## 安装方式
 
 clone本仓库代码到ros工作空间中
+使用默认分支minimum-snap
 
 编译
 
