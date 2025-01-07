@@ -289,30 +289,160 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
+# Target rules for targets named decode_msgs
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
+decode_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decode_msgs
+.PHONY : decode_msgs
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+decode_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/decode_msgs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/decode_msgs.dir/build
+.PHONY : decode_msgs/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
+# Target rules for targets named quadrotor_msgs_genpy
 
 # Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
+quadrotor_msgs_genpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_genpy
+.PHONY : quadrotor_msgs_genpy
 
 # fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+quadrotor_msgs_genpy/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genpy.dir/build
+.PHONY : quadrotor_msgs_genpy/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_gennodejs
+
+# Build rule for target.
+quadrotor_msgs_gennodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_gennodejs
+.PHONY : quadrotor_msgs_gennodejs
+
+# fast build rule for target.
+quadrotor_msgs_gennodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gennodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gennodejs.dir/build
+.PHONY : quadrotor_msgs_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_nodejs
+
+# Build rule for target.
+nav_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_py
+
+# Build rule for target.
+nav_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_cpp
+
+# Build rule for target.
+nav_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -324,86 +454,60 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix
 
 # Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix
 
 # fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_nodejs
+# Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
-roscpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
-.PHONY : roscpp_generate_messages_nodejs
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
 
 # fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_SwarmCommand
 
 # Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
+_quadrotor_msgs_generate_messages_check_deps_SwarmCommand: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_SwarmCommand
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmCommand
 
 # fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+_quadrotor_msgs_generate_messages_check_deps_SwarmCommand/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmCommand.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmCommand.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmCommand/fast
 
 #=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
+# Target rules for targets named roscpp_generate_messages_eus
 
 # Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+roscpp_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -415,8 +519,606 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages_py
+
+# Build rule for target.
+quadrotor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages_py
+.PHONY : quadrotor_msgs_generate_messages_py
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build
+.PHONY : quadrotor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_StatusData
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_StatusData: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_StatusData
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_StatusData/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Odometry
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Odometry: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Odometry
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Odometry/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_lisp
+
+# Build rule for target.
+nav_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_SwarmInfo
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SwarmInfo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_SwarmInfo
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmInfo
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SwarmInfo/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmInfo.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmInfo.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmInfo/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages
+
+# Build rule for target.
+quadrotor_msgs_generate_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages
+.PHONY : quadrotor_msgs_generate_messages
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages.dir/build
+.PHONY : quadrotor_msgs_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_AuxCommand: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_geneus
+
+# Build rule for target.
+quadrotor_msgs_geneus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_geneus
+.PHONY : quadrotor_msgs_geneus
+
+# fast build rule for target.
+quadrotor_msgs_geneus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_geneus.dir/build
+.PHONY : quadrotor_msgs_geneus/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+quadrotor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages_nodejs
+.PHONY : quadrotor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build
+.PHONY : quadrotor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Corrections
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Corrections: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Corrections
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Corrections
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Corrections/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Corrections.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Corrections.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Corrections/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Bspline
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Bspline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Bspline
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Bspline
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Bspline/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Bspline.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Bspline.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Bspline/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_ReplanCheck
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_ReplanCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_ReplanCheck
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_ReplanCheck
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_ReplanCheck/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_ReplanCheck.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_ReplanCheck.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_ReplanCheck/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Gains
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Gains: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Gains
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Gains/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_OutputData
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_OutputData: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_OutputData
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_OutputData
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_OutputData/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_OutputData.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_OutputData.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_OutputData/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_PositionCommand
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PositionCommand: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_PositionCommand
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PositionCommand
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PositionCommand/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PositionCommand.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PositionCommand.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PositionCommand/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_PPROutputData
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PPROutputData: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_PPROutputData
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PPROutputData
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PPROutputData/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PPROutputData.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PPROutputData.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PPROutputData/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Serial
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Serial: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Serial
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Serial
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Serial/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Serial.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Serial.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Serial/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_SwarmOdometry
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SwarmOdometry: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_SwarmOdometry
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmOdometry
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SwarmOdometry/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmOdometry.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SwarmOdometry.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SwarmOdometry/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_SO3Command
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SO3Command: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_SO3Command
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SO3Command
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_SO3Command/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_SO3Command/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_gencpp
+
+# Build rule for target.
+quadrotor_msgs_gencpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_gencpp
+.PHONY : quadrotor_msgs_gencpp
+
+# fast build rule for target.
+quadrotor_msgs_gencpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gencpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gencpp.dir/build
+.PHONY : quadrotor_msgs_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_genlisp
+
+# Build rule for target.
+quadrotor_msgs_genlisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_genlisp
+.PHONY : quadrotor_msgs_genlisp
+
+# fast build rule for target.
+quadrotor_msgs_genlisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genlisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_genlisp.dir/build
+.PHONY : quadrotor_msgs_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_TRPYCommand: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_TRPYCommand/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TRPYCommand.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TRPYCommand.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TRPYCommand/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Replan
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Replan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Replan
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Replan
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Replan/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Replan.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Replan.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Replan/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages_cpp
+
+# Build rule for target.
+quadrotor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages_cpp
+.PHONY : quadrotor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build
+.PHONY : quadrotor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named encode_msgs
+
+# Build rule for target.
+encode_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 encode_msgs
+.PHONY : encode_msgs
+
+# fast build rule for target.
+encode_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/encode_msgs.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/encode_msgs.dir/build
+.PHONY : encode_msgs/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages_eus
+
+# Build rule for target.
+quadrotor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages_eus
+.PHONY : quadrotor_msgs_generate_messages_eus
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_eus.dir/build
+.PHONY : quadrotor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named quadrotor_msgs_generate_messages_lisp
+
+# Build rule for target.
+quadrotor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadrotor_msgs_generate_messages_lisp
+.PHONY : quadrotor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+quadrotor_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_lisp.dir/build
+.PHONY : quadrotor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_cpp
@@ -432,71 +1134,6 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
-
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -510,30 +1147,17 @@ visualization_msgs_generate_messages_eus/fast:
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+# Target rules for targets named astar_planner
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
+astar_planner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 astar_planner
+.PHONY : astar_planner
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named obstacle_generator
-
-# Build rule for target.
-obstacle_generator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacle_generator
-.PHONY : obstacle_generator
-
-# fast build rule for target.
-obstacle_generator/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/obstacle_generator.dir/build.make astar_path_planner/CMakeFiles/obstacle_generator.dir/build
-.PHONY : obstacle_generator/fast
+astar_planner/fast:
+	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/astar_planner.dir/build.make astar_path_planner/CMakeFiles/astar_planner.dir/build
+.PHONY : astar_planner/fast
 
 #=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_nodejs
@@ -562,45 +1186,6 @@ visualization_msgs_generate_messages_py/fast:
 .PHONY : visualization_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
-
-# Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_eus
-
-# Build rule for target.
-geometry_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_nodejs
-
-# Build rule for target.
-geometry_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -614,30 +1199,524 @@ visualization_msgs_generate_messages_lisp/fast:
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named astar_planner
+# Target rules for targets named obstacle_generator
 
 # Build rule for target.
-astar_planner: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 astar_planner
-.PHONY : astar_planner
+obstacle_generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacle_generator
+.PHONY : obstacle_generator
 
 # fast build rule for target.
-astar_planner/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/astar_planner.dir/build.make astar_path_planner/CMakeFiles/astar_planner.dir/build
-.PHONY : astar_planner/fast
+obstacle_generator/fast:
+	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/obstacle_generator.dir/build.make astar_path_planner/CMakeFiles/obstacle_generator.dir/build
+.PHONY : obstacle_generator/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+# Target rules for targets named std_srvs_generate_messages_py
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+std_srvs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_py
+
+# Build rule for target.
+map_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_msgs_generate_messages_py
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_py
+
+# Build rule for target.
+rviz_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_generate_messages_py
+.PHONY : rviz_generate_messages_py
+
+# fast build rule for target.
+rviz_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_py.dir/build
+.PHONY : rviz_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_nodejs
+
+# Build rule for target.
+rviz_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_generate_messages_nodejs
+.PHONY : rviz_generate_messages_nodejs
+
+# fast build rule for target.
+rviz_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_nodejs.dir/build
+.PHONY : rviz_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rviz_plugins
+
+# Build rule for target.
+rviz_plugins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_plugins
+.PHONY : rviz_plugins
+
+# fast build rule for target.
+rviz_plugins/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_plugins.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_plugins.dir/build
+.PHONY : rviz_plugins/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_nodejs
+
+# Build rule for target.
+map_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_msgs_generate_messages_nodejs
+.PHONY : map_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+map_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_lisp
+
+# Build rule for target.
+rviz_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_generate_messages_lisp
+.PHONY : rviz_generate_messages_lisp
+
+# fast build rule for target.
+rviz_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_lisp.dir/build
+.PHONY : rviz_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_cpp
+
+# Build rule for target.
+rviz_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_generate_messages_cpp
+.PHONY : rviz_generate_messages_cpp
+
+# fast build rule for target.
+rviz_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_cpp.dir/build
+.PHONY : rviz_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_eus
+
+# Build rule for target.
+map_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_msgs_generate_messages_eus
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_lisp
+
+# Build rule for target.
+map_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_msgs_generate_messages_lisp
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rviz_generate_messages_eus
+
+# Build rule for target.
+rviz_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rviz_generate_messages_eus
+.PHONY : rviz_generate_messages_eus
+
+# fast build rule for target.
+rviz_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/rviz_generate_messages_eus.dir/build
+.PHONY : rviz_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/_catkin_empty_exported_target.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
+
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_eus.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_nodejs
+
+# Build rule for target.
+tf2_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_cpp
+
+# Build rule for target.
+map_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_msgs_generate_messages_cpp
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_cpp.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_nodejs
+
+# Build rule for target.
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_nodejs.dir/build.make minimumsnap_trajectory_generation/rviz_plugins/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_generator
+
+# Build rule for target.
+waypoint_generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_generator
+.PHONY : waypoint_generator
+
+# fast build rule for target.
+waypoint_generator/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/waypoint_generator/CMakeFiles/waypoint_generator.dir/build.make minimumsnap_trajectory_generation/waypoint_generator/CMakeFiles/waypoint_generator.dir/build
+.PHONY : waypoint_generator/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_generator_node
+
+# Build rule for target.
+trajectory_generator_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trajectory_generator_node
+.PHONY : trajectory_generator_node
+
+# fast build rule for target.
+trajectory_generator_node/fast:
+	$(MAKE) $(MAKESILENT) -f minimumsnap_trajectory_generation/waypoint_trajectory_generator/CMakeFiles/trajectory_generator_node.dir/build.make minimumsnap_trajectory_generation/waypoint_trajectory_generator/CMakeFiles/trajectory_generator_node.dir/build
+.PHONY : trajectory_generator_node/fast
 
 # Help Target
 help:
@@ -652,6 +1731,38 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_AuxCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Bspline"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Corrections"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Gains"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Odometry"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_OptimalTimeAllocator"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_OutputData"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_PPROutputData"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_PositionCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Replan"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_ReplanCheck"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_SO3Command"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Serial"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_SpatialTemporalTrajectory"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_StatusData"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_SwarmCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_SwarmInfo"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_SwarmOdometry"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_TRPYCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_TrajectoryMatrix"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... clean_test_results"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
@@ -660,6 +1771,27 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... map_msgs_generate_messages_py"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... quadrotor_msgs_gencpp"
+	@echo "... quadrotor_msgs_generate_messages"
+	@echo "... quadrotor_msgs_generate_messages_cpp"
+	@echo "... quadrotor_msgs_generate_messages_eus"
+	@echo "... quadrotor_msgs_generate_messages_lisp"
+	@echo "... quadrotor_msgs_generate_messages_nodejs"
+	@echo "... quadrotor_msgs_generate_messages_py"
+	@echo "... quadrotor_msgs_geneus"
+	@echo "... quadrotor_msgs_genlisp"
+	@echo "... quadrotor_msgs_gennodejs"
+	@echo "... quadrotor_msgs_genpy"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -671,23 +1803,53 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... run_tests"
+	@echo "... rviz_generate_messages_cpp"
+	@echo "... rviz_generate_messages_eus"
+	@echo "... rviz_generate_messages_lisp"
+	@echo "... rviz_generate_messages_nodejs"
+	@echo "... rviz_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... tests"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... tf_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... astar_planner"
+	@echo "... decode_msgs"
+	@echo "... encode_msgs"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... obstacle_generator"
+	@echo "... rviz_plugins"
+	@echo "... trajectory_generator_node"
+	@echo "... waypoint_generator"
 .PHONY : help
 
 

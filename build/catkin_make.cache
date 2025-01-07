@@ -1,2 +1,2 @@
-astar_path_planner
--DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/jiangpin/projects/homework/Homework_ysh-ljp/devel -DCMAKE_INSTALL_PREFIX=/home/jiangpin/projects/homework/Homework_ysh-ljp/install -G Unix Makefiles
+astar_path_planner:minimumsnap_trajectory_generation/quadrotor_msgs:minimumsnap_trajectory_generation/rviz_plugins:minimumsnap_trajectory_generation/waypoint_generator:minimumsnap_trajectory_generation/waypoint_trajectory_generator
+-DCATKIN_DEVEL_PREFIX=/home/jiangpin/projects/homework/Homework_ysh-ljp/devel -DCMAKE_INSTALL_PREFIX=/home/jiangpin/projects/homework/Homework_ysh-ljp/install -G Unix Makefiles

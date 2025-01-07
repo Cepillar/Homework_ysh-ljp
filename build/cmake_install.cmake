@@ -136,7 +136,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/gtest/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/minimumsnap_trajectory_generation/quadrotor_msgs/cmake_install.cmake")
   include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/astar_path_planner/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/minimumsnap_trajectory_generation/rviz_plugins/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/minimumsnap_trajectory_generation/waypoint_generator/cmake_install.cmake")
+  include("/home/jiangpin/projects/homework/Homework_ysh-ljp/build/minimumsnap_trajectory_generation/waypoint_trajectory_generator/cmake_install.cmake")
 
 endif()
 

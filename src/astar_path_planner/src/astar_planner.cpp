@@ -11,7 +11,7 @@
 #include <unordered_set>
 #include <chrono>
 
-
+#define OBS_RADIUS 0.2
 struct Node {
     int x, y;        // 节点所在的网格坐标
     double g_cost;   // 从起点到当前节点的代价
@@ -68,7 +68,7 @@ public:
 
     void setObstacle(double cx, double cy, double radius) {
         num_of_obs_++;
-        grid_map_.markObstacle(cx, cy, radius);
+        grid_map_.markObstacle(cx, cy, radius+OBS_RADIUS);
     }
 
     void printGridMap(){
@@ -210,6 +210,7 @@ public:
             closed_list.insert(current_key);
 
             if (current_node->x == gridGoal.first && current_node->y == gridGoal.second) {
+                std::cout<<"find path"<<std::endl;
                 return reconstructPath(current_node);  // 找到路径
             }
 
@@ -225,6 +226,7 @@ public:
                 open_list.push(std::make_shared<Node>(neighbor));
             }
         }
+        std::cout<<"failed to find path"<<std::endl;
         return {};  // 未找到路径
     }
 

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jiangpin/projects/Multi-Robot-SLAM/Multi-Robot-LIO/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/jiangpin/projects/Multi-Robot-SLAM/Multi-Robot-LIO/src/fast_gicp/include/**",
+        "/home/jiangpin/projects/Multi-Robot-SLAM/Multi-Robot-LIO/src/geometry_utils/include/**",
+        "/home/jiangpin/projects/Multi-Robot-SLAM/Multi-Robot-LIO/src/global_manager/include/**",
+        "/home/jiangpin/projects/Multi-Robot-SLAM/Multi-Robot-LIO/src/lamp_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
