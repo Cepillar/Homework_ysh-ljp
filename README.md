@@ -1,7 +1,11 @@
 ## 安装方式
 
 clone本仓库代码到ros工作空间中
-使用默认分支minimum-snap
+
+使用默认分支minimum-snap运行
+
+最后rviz运行结果中，/path话题展示了路径规划结果（绿色），trajectory_generator_node/vis_trajectory话题展示了轨迹规划结果（蓝色）
+
 
 编译
 
